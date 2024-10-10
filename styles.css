@@ -138,29 +138,43 @@ footer{
 /*--Mobile--*/
 
 @media (max-width: 900px) {
-
-    .cabecario h1{
-        font-size: 40px;
-    }
-
-    h2{
-        font-size: 40px;
-        text-align: center;
-        margin: 12PX;
-    }
-
-    .banner img{
-        max-height: 22vh;
-        display: block;
-    }
-
-    .pedais_disponiveis{
-        display: flex;
+    .cabecario {
         flex-direction: column;
+        text-align: center;
     }
 
-    input{
-        margin-top: 14px;
+    .cabecario h1 {
+        font-size: 60px;
     }
 
+    .banner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .formulario {
+        font-size: 2rem;
+        padding: 1rem;
+    }
+
+    .pedais_disponiveis {
+        grid-template-columns: 1fr;
+        padding: 1rem 2rem;
+        gap: 3rem;
+    }
+
+    .caixa-item {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+    .imagem_pedal {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .comprar {
+        grid-column: 1;
+        margin-top: 1rem;
+    }
 }
